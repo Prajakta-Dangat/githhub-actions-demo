@@ -1,12 +1,12 @@
-name: First Workflow
+name: First Workflow  #The name keyword gives a readable name to the workflow.
 
-on:
+on:    #The on keyword tells GitHub when to start the workflow.
   push:
 
-jobs:
+jobs:   #A job is a collection of related tasks.
   hello:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  #runs-on tells GitHub which machine should execute the job.
 
-    steps:
+    steps:   #A step is a single task inside a job.
       - name: Print Message
         run: echo "Hello GitHub Actions!"
